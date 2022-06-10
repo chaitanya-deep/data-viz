@@ -9,6 +9,7 @@
   "author": "Deep <deep@euclidxr.com>",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-github-corner": "^2.5.0",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "vite src",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish": "gh-pages -d dist"
   }
 }
