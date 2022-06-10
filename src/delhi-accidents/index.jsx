@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import GithubBanner from "../components/github-banner";
 import Page from "../components/page";
-import {CartesianGrid, Line, LineChart, XAxis, YAxis, ResponsiveContainer, Tooltip, Label} from "recharts";
+import {CartesianGrid, Line, LineChart, XAxis, YAxis, ResponsiveContainer, Tooltip, Label, Legend} from "recharts";
 
 const DATA = [
   { year: 2006, c_k: 154, c_i: 451, t_k: 2169, t_i: 8280, },
@@ -35,6 +35,10 @@ const DelhiAccidents = () => (
           <LineChart width={500} height={300} data={DATA}
                      margin={{ top: 26, right: 30, left: 10, bottom: 26 }}
           >
+            <Legend
+              align="right"
+              verticalAlign="top"
+            />
             <XAxis
               dataKey="year"
               stroke="#ffffff"
