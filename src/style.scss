@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #efefef;
   font-family: 'Roboto', sans-serif;
+  overflow: auto;
 }
 
 h1, h2, h3, h4 {
@@ -51,10 +52,21 @@ a {
   color: #ee6002;
 }
 
+p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
 .graph-container {
   height: 500px;
   background-color: #333333;
   border-radius: 8px;
   position: relative;
   color: inherit;
+}
+
+.small {
+  font-size: 0.7rem;
 }
